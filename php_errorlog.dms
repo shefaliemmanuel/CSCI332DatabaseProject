@@ -1,0 +1,29 @@
+[28-Feb-2018 16:30:35 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/shefalie/public_html/libraryList.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/shefalie/public_html/libraryList.php on line 6
+[28-Feb-2018 16:37:55 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/shefalie/public_html/libraryList.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/shefalie/public_html/libraryList.php on line 6
+[28-Feb-2018 16:38:12 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/shefalie/public_html/libraryList.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/shefalie/public_html/libraryList.php on line 6
+[28-Feb-2018 16:39:02 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/shefalie/public_html/libraryList.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/shefalie/public_html/libraryList.php on line 6
+[28-Feb-2018 16:39:15 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/shefalie/public_html/libraryList.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/shefalie/public_html/libraryList.php on line 6
+[28-Feb-2018 16:39:20 CST6CDT] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/shefalie/public_html/libraryList.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/shefalie/public_html/libraryList.php on line 6
+[28-Feb-2018 16:40:58 CST6CDT] PHP Fatal error:  require(): Failed opening required 'dbconnect.php' (include_path='.:/usr/local/php70/pear') in /home/shefalie/public_html/libraryList.php on line 2
+[24-Mar-2018 16:10:49 CST6CDT] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/shefalie/public_html/libraryList.php on line 13
+[24-Mar-2018 16:11:12 CST6CDT] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/shefalie/public_html/libraryList.php on line 15
+[24-Mar-2018 16:11:31 CST6CDT] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/shefalie/public_html/libraryList.php on line 14
+[24-Mar-2018 16:11:59 CST6CDT] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /home/shefalie/public_html/libraryList.php on line 36
