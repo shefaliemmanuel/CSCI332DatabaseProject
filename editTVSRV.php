@@ -2,14 +2,15 @@
 require 'dbconnect.php';
 
 $title = $_REQUEST['title'];
-$author= $_REQUEST['author'];
-$publisher= $_REQUEST['publisher'];
-$yearPublished= $_REQUEST['yearPublished'];
-$genre= $_REQUEST['genre'];
-$numberOfPages= $_REQUEST['numberOfPages'];
-$isbn= $_REQUEST['ISBN'];
+$genres = $_REQUEST['genres'];
+$year = $_REQUEST['year'];
+$releaseDate = $_REQUEST['releaseDate'];
+$directors = $_REQUEST['directors'];
+$IMDbRating = $_REQUEST['IMDbRating'];
+$url = $_REQUEST['url'];
+$id = $_REQUEST['id'];
 
-$sql = "UPDATE Books SET title = '" . $title . "' WHERE isbn = '" . $isbn . "'";
+$sql = "UPDATE TV SET title = '" . $title . "', genres = '" . $genres . "', year = '" . $year . "', releaseDate = '" . $releaseDate . "', directors = '" . $directors . "', IMDbRating = '" . $IMDbRating . "', url = '" . $url . "' WHERE id = '" . $id . "'";
 
 echo 'hello' . $title;
 

@@ -1,5 +1,6 @@
 <?php
 require 'dbconnect.php';
+
 $title = $_REQUEST['title'];
 $genres = $_REQUEST['genres'];
 $year = $_REQUEST['year'];
@@ -9,7 +10,9 @@ $IMDbRating = $_REQUEST['IMDbRating'];
 $url = $_REQUEST['url'];
 $id = $_REQUEST['id'];
 
-$sql = "insert into TV (title, genres, year, releaseDate, directors, IMDbRating, url, id) VALUES ('$title','$genres','$year','$releaseDate','$directors','$IMDbRating','$url','$id')";
+$sql = "UPDATE Movies SET title = '" . $title . "',genres = '" . $genres . "',year = '" . $year . "',releaseDate = '" . $releaseDate . "',directors = '" . $directors . "', IMDbRating = '" . $IMDbRating . "', url = '" . $url . "' WHERE id = '" . $id . "'";
+
+echo 'hello' . $title;
 
 if (!$result = $mysqli->query($sql)) {
     echo "Error: Our query failed to execute and here is why: </br>";
@@ -18,9 +21,6 @@ if (!$result = $mysqli->query($sql)) {
     echo "Error: " . $mysqli->error . "</br>";
     exit;
 }
-
-
 ?>
-<script>
-    window.location = 'tvList.php';
-</script>
+
+<script>window.location = 'movieList.php';</script>

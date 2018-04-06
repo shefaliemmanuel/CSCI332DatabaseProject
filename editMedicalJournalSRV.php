@@ -5,7 +5,7 @@ $title = $_REQUEST['title'];
 $issn = $_REQUEST['issn'];
 $productID = $_REQUEST['productID'];
 $changeHistory = $_REQUEST['changeHistory'];
-$sql = "UPDATE MedicalJournals SET title = '" . $title . "', issn = '" . $issn . "', changeHistory = '" . $changeHistory . "', WHERE productID = '" . $productID . "'";
+$sql = "UPDATE MedicalJournals SET title = '" . $title . "', issn = '" . $issn . "', changeHistory = '" . $changeHistory . "' WHERE productID = '" . $productID . "'";
 
 echo 'hello' . $title;
 

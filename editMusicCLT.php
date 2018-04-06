@@ -1,6 +1,6 @@
 <?php
 include "dbconnect.php";
-$sql = "SELECT * FROM Books WHERE id = '" . $_REQUEST['id']."'";
+$sql = "SELECT * FROM Music WHERE id = '" . $_REQUEST['id']."'";
 
 if (!$result = $mysqli->query($sql)) {
     echo "Error: Our query failed to execute and here is why: </br>";
@@ -20,7 +20,7 @@ $trackNumber = $_REQUEST['trackNumber'];
 $spotifyURL = $_REQUEST['spotifyURL'];
 
 ?>
-<form action="editBookSRV.php" method="get">
+<form action="editMusicSRV.php" method="get">
     <input type="hidden" name="key" value="<?php echo $key?>" />
     trackName:<input type="text" name="trackName" value="<?php echo $s['trackName']?>"/></br>
     artist:<input type="text" name="artist" value="<?php echo $s['artist']?>"/></br>

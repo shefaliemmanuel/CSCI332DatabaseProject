@@ -1,7 +1,22 @@
+<html>
+<head>
+    <style>
+        @font-face {
+            font-family: myFirstFont;
+            src: url(CenturyGothic.ttf);
+        }
+
+        * {
+            font-family: myFirstFont;
+        }
+
+    </style>
+</head>
+<body>
 <?php
 require 'dbconnect.php';
 
-$sql = "SELECT * FROM Books ORDER BY titleORDER BY title";
+$sql = "SELECT * FROM Books ORDER BY title";
 
 if (!$result = $mysqli->query($sql)) {
     echo "Error: Our query failed to execute and here is why: </br>";
@@ -34,3 +49,6 @@ echo "</table>";
 
 ?>
 <a href="addBookCLT.htm">Add New</a>
+
+</body>
+</html>

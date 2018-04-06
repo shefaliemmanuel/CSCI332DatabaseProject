@@ -9,7 +9,7 @@ $discNumber = $_REQUEST['discNumber'];
 $trackNumber = $_REQUEST['trackNumber'];
 $spotifyURL = $_REQUEST['spotifyURL'];
 
-$sql = "UPDATE Books SET trackName = '" . $trackName . "',artist = '" . $artist . "',albumName = '" . $albumName . "',discNumber = '" . $discNumber . "',trackNumber = '" . $trackNumber . "',spotifyURL = '" . $spotifyURL . "' WHERE id = '" . $id . "'";
+$sql = "UPDATE Music SET trackName = '" . $trackName . "',artist = '" . $artist . "',albumName = '" . $albumName . "',discNumber = '" . $discNumber . "',trackNumber = '" . $trackNumber . "',spotifyURL = '" . $spotifyURL . "' WHERE id = '" . $id . "'";
 
 echo 'hello' . $title;
 
