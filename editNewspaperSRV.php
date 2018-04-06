@@ -7,7 +7,7 @@ $yearsOfCoverage = $_REQUEST['yearsOfCoverage'];
 $collection = $_REQUEST['collection'];
 $id = $_REQUEST['id'];
 
-$sql = "UPDATE Books SET title = '" . $title . "', city = '" . $city . "', yearsOfCoverage = '" . $yearsOfCoverage . "', collection = '" . $collection . "' WHERE isbn = '" . $isbn . "'";
+$sql = "UPDATE Newspapers SET title = '" . $title . "', city = '" . $city . "', yearsOfCoverage = '" . $yearsOfCoverage . "', collection = '" . $collection . "' WHERE id = '" . $id . "'";
 
 echo 'hello' . $title;
 

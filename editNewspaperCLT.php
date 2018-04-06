@@ -1,6 +1,6 @@
 <?php
 include "dbconnect.php";
-$sql = "SELECT * FROM Books WHERE id = '" . $_REQUEST['id']."'";
+$sql = "SELECT * FROM Newspapers WHERE id = '" . $_REQUEST['id']."'";
 
 if (!$result = $mysqli->query($sql)) {
     echo "Error: Our query failed to execute and here is why: </br>";
@@ -18,7 +18,7 @@ $collection = $_REQUEST['collection'];
 $id = $_REQUEST['id'];
 
 ?>
-<form action="editBookSRV.php" method="get">
+<form action="editNewspaperSRV.php" method="get">
     <input type="hidden" name="key" value="<?php echo $key?>" />
     Title:<input type="text" name="title" value="<?php echo $s['title']?>"/></br>
     city:<input type="text" name="city" value="<?php echo $s['city']?>"/></br>

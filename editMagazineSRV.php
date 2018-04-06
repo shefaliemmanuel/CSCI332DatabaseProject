@@ -13,7 +13,7 @@ $language = $_REQUEST['language'];
 $primarySubject = $_REQUEST['primarySubject'];
 $titleID = $_REQUEST['titleID'];
 
-$sql = "UPDATE Magazine SET title = '" . $title . "',issn = '" . $issn . "',genre = '" . $genre . "',fullTextStartDate = '" . $fullTextStartDate . "',fullTextEndDate = '" . $fullTextEndDate . "',frequency = '" . $frequency . "',publisher = '" . $publisher . "',country = '" . $country . "',language = '" . $language . "', primarySubject = '" . $primarySubject . "' WHERE titleID = '" . $titleID . "'";
+$sql = "UPDATE Magazines SET title = '" . $title . "',issn = '" . $issn . "',genre = '" . $genre . "',fullTextStartDate = '" . $fullTextStartDate . "',fullTextEndDate = '" . $fullTextEndDate . "',frequency = '" . $frequency . "',publisher = '" . $publisher . "',country = '" . $country . "',language = '" . $language . "', primarySubject = '" . $primarySubject . "' WHERE titleID = '" . $titleID . "'";
 
 if (!$result = $mysqli->query($sql)) {
     echo "Error: Our query failed to execute and here is why: </br>";
